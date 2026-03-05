@@ -1,0 +1,31 @@
+name: Alerta Entregado vs Facturado
+
+on:
+  schedule:
+    - cron: "0 */3 * * 1-5"   # cada 3 horas, lunes a viernes
+  workflow_dispatch:            # correr manual desde GitHub cuando quieras
+
+permissions:
+  contents: write               # necesario para guardar alertas_memoria.json
+
+jobs:
+  alerta:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Instalar dependencias
+        run: pip install pandas openpyxl
+
+      - name: Correr alerta
+        env:
+          ODOO_PASSWORD: ${{ secrets.ODOO_PASSWORD }}
+          EMAIL_TO:      ${{ secrets.EMAIL_TO }}
+          SMTP_HOST:     ${{ secrets.SMTP_HOST }}
+          SMTP_PORT:     ${{ secrets.SMTP_PORT }}
+          SMTP_USER:     ${{ secrets.SMTP_USER }}
+          SMTP_PASS:     ${{ secrets.SMTP_PASS }}
+        run: python alerta_entregado_facturado.py
