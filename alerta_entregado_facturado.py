@@ -32,11 +32,11 @@ ODOO_DB       = "temponovo"
 ODOO_USER     = "natalia@temponovo.cl"
 ODOO_PASSWORD = os.environ.get("ODOO_PASSWORD", "TU_API_KEY_AQUI")
 
-EMAIL_TO      = os.environ.get("EMAIL_TO", "natalia@temponovo.cl")
+EMAIL_TO      = os.environ.get("EMAIL_TO") or "natalia@temponovo.cl"
 
-SMTP_HOST     = os.environ.get("SMTP_HOST", "srv10.akkuarios.com")
-SMTP_PORT     = int(os.environ.get("SMTP_PORT", "587"))
-SMTP_USER     = os.environ.get("SMTP_USER", "reportes@temponovo.cl")
+SMTP_HOST     = os.environ.get("SMTP_HOST") or "srv10.akkuarios.com"
+SMTP_PORT     = int(os.environ.get("SMTP_PORT") or "587")
+SMTP_USER     = os.environ.get("SMTP_USER") or "reportes@temponovo.cl"
 SMTP_PASS     = os.environ.get("SMTP_PASS", "")
 
 FECHA_INICIO      = "2025-03-01"  # ignorar todo lo anterior
