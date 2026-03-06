@@ -34,10 +34,10 @@ ODOO_PASSWORD = "Contraodoo94+"
 
 EMAIL_TO      = os.environ.get("EMAIL_TO") or "natalia@temponovo.cl"
 
-SMTP_HOST     = os.environ.get("SMTP_HOST") or "srv10.akkuarios.com"
-SMTP_PORT     = int(os.environ.get("SMTP_PORT") or "587")
-SMTP_USER     = os.environ.get("SMTP_USER") or "reportes@temponovo.cl"
-SMTP_PASS     = os.environ.get("SMTP_PASS", "")
+SMTP_HOST     = "srv10.akkuarios.com"
+SMTP_PORT     = "587"
+SMTP_USER     = "reportes@temponovo.cl"
+SMTP_PASS     = "reportes123"
 
 FECHA_INICIO      = "2025-03-01"  # ignorar todo lo anterior
 HORAS_GRACIA      = 3             # horas desde entrega antes de alertar
