@@ -32,14 +32,14 @@ ODOO_DB       = "cmcorpcl-temponovo-main-24490235"
 ODOO_USER     = "natalia@temponovo.cl"
 ODOO_PASSWORD = "Contraodoo94+"
 
-EMAIL_TO      = os.environ.get("EMAIL_TO") or "natalia@temponovo.cl"
+EMAIL_TO      = ["daniel@temponovo.cl","natalia@temponovo.cl"]
 
 SMTP_HOST     = "srv10.akkuarios.com"
 SMTP_PORT     = "587"
 SMTP_USER     = "reportes@temponovo.cl"
 SMTP_PASS     = "reportes123"
 
-FECHA_INICIO      = "2025-03-01"  # ignorar todo lo anterior
+FECHA_INICIO      = "2026-03-01"  # ignorar todo lo anterior
 HORAS_GRACIA      = 3             # horas desde entrega antes de alertar
 DIAS_RECORDATORIO = 2             # días sin resolver para mandar recordatorio
 MEMORIA_FILE      = "alertas_memoria.json"
