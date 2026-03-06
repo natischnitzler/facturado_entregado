@@ -28,7 +28,7 @@ from datetime import datetime, timezone, timedelta
 # CONFIGURACIÓN
 # ──────────────────────────────────────────────
 ODOO_URL      = "https://temponovo.odoo.com"
-ODOO_DB       = "temponovo"
+ODOO_DB       = "cmcorpcl-temponovo-main-24490235"
 ODOO_USER     = "natalia@temponovo.cl"
 ODOO_PASSWORD = "Contraodoo94+"
 
