@@ -314,9 +314,8 @@ def generar_html(resumen, nuevos, recordatorio_list):
       <div style="padding:24px 32px;">
         <p style="color:#475569;font-size:14px;margin-top:0;">
           Los siguientes pedidos tienen diferencia entre lo <strong>entregado</strong> y
-          lo <strong>facturado neto</strong> (descontando NC) con más de
+          lo <strong>facturado neto</strong> con más de
           <strong>{HORAS_GRACIA} horas</strong> sin resolverse.
-          El detalle por producto va adjunto en Excel.
         </p>
         <table style="width:100%;border-collapse:collapse;font-size:13px;">
           <thead>
