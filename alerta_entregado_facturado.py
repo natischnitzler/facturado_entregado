@@ -32,7 +32,7 @@ ODOO_DB       = "cmcorpcl-temponovo-main-24490235"
 ODOO_USER     = "natalia@temponovo.cl"
 ODOO_PASSWORD = "Contraodoo94+"
 
-EMAIL_TO      = ["daniel@temponovo.cl","natalia@temponovo.cl"]
+EMAIL_TO      = "daniel@temponovo.cl",natalia@temponovo.cl"
 
 SMTP_HOST     = "srv10.akkuarios.com"
 SMTP_PORT     = "587"
