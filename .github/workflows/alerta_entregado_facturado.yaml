@@ -2,7 +2,7 @@ name: Alerta Entregado vs Facturado
 
 on:
   schedule:
-    - cron: "0 */3 * * 1-5"   # cada 3 horas, lunes a viernes
+    - cron: "0 12-21 * * 1-5"   # equivale a 9:00-18:00 hora Chile verano (UTC-3)# cada 3 horas, lunes a viernes
   workflow_dispatch:            # correr manual desde GitHub cuando quieras
 
 permissions:
